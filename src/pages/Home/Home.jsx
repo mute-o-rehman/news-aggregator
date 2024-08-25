@@ -12,7 +12,6 @@ const Home = () => {
   const [sources, setSources] = useState([]);
   const [authors, setAuthors] = useState([]);
   const [filter, setFilter] = useState({ source: "", date: "" });
-  const [preferences, setPreferences] = useState({ source: "", author: "" });
 
   useEffect(() => {
     const query = "apple"; // Default query
@@ -54,7 +53,7 @@ const Home = () => {
   };
 
   const handlePreferencesChange = (newPreferences) => {
-    setPreferences(newPreferences);
+    setFilter(newPreferences);
     applyFilters(articles, newPreferences);
   };
 
@@ -81,7 +80,7 @@ const Home = () => {
   };
 
   const resetPreferences = () => {
-    setPreferences({ source: "", author: "" });
+    setFilter({ source: "", author: "" });
     setFilteredArticles(articles);
   };
 
