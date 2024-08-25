@@ -31,7 +31,6 @@ src/
 │   ├── NewsFeed/
 │   ├── SearchBar/
 │   └── Preferences/
-├── hooks/             # Custom hooks
 ├── pages/             # Page components
 │   └── Home/
 ├── styles/            # Global and component-specific styles
@@ -51,8 +50,8 @@ src/
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-repository-name.git
-   cd your-repository-name
+   git clone https://github.com/mute-o-rehman/news-aggregator.git
+   cd news-aggregator
    ```
 
 2. **Install dependencies:**
@@ -65,14 +64,6 @@ src/
 
    ```bash
    yarn install
-   ```
-
-3. **Environment Variables:**
-
-   Create a `.env` file in the root directory and add your API key for the News API:
-
-   ```env
-   REACT_APP_NEWS_API_KEY=your_api_key_here
    ```
 
 ### Running the Application Locally
